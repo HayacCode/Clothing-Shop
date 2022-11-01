@@ -1,6 +1,6 @@
 **Domina HTML, CSS y JavaScipt con ditintos proyectos**
 
--Cada proyecto es basicamente una template(plantilla) esto las hace completamene      editables para adaptarlas a cualquier proyecto que tengas en mente.
+Cada proyecto es basicamente una template(plantilla) esto las hace completamene      editables para adaptarlas a cualquier proyecto que tengas en mente.
 
 **Pasos para usarlas**
 
