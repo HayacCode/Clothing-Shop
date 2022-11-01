@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="responsive-style.css">
+     <!--Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+     <title>SkyBlue</title>
+</head>
+<body>
+     <!--Header-->
+     <header class="header">
+          <img class="burguer" src="./icons/burguer.svg" alt="">
+          <h2 class="logo" href="">SkyBlue</h2>
+          <nav class="header__nav">
+               <ul>
+                    <li><a href="#principal">Inicio</a></li>
+                    <li><a href="#catalogue">Catalogo</a></li>
+                    <li><a href="#contact">Contactame</a></li>
+               </ul>
+          </nav>
+          <div class="header__redes">
+               <a href=""><img src="./icons/facebook.svg" alt=""></a>
+               <a href=""><img src="./icons/tiktok.svg" alt=""></a>
+               <a href=""><img src="./icons/instagram.svg" alt=""></a>
+          </div>
+     </header>
+     <!--Galery-->
+     <section class="galery">
+          <p class="frame1">Descuentos del 25% toda la semana</p>
+          <figure class="frame2"><img src="./imgs/img2.jpg" alt=""></figure>
+          <figure class="frame3"><img src="./imgs/img3.jpg" alt=""></figure>
+          <figure class="frame4"><img src="./imgs/img4.jpg" alt=""></figure>
+          <figure class="frame5"><img src="./imgs/img5.jpg" alt=""></figure>
+     </section> 
+     <!--Catalogue-->
+     <section class="catalogue" id="catalogue">
+          <div class="catalogue__grid">
+               <h2>Catalogo</h2>
+               <!--Tagas-->
+               <div class="catalogue__tags">
+
+                    <label for="radio1">
+                         <span>Popular</span>
+                    </label>
+                    <label for="radio2">
+                         <span>Vestidos</span>
+                    </label>
+                    <label for="radio3">
+                         <span>Blusas</span>
+                    </label>
+                    <label for="radio4">    
+                         <span>Accesorios</span>
+                    </label>
+               </div>
+
+               <input type="radio" name="chk" id="radio1" hidden>
+               <input type="radio" name="chk" id="radio2" hidden>
+               <input type="radio" name="chk" id="radio3" hidden>
+               <input type="radio" name="chk" id="radio4" hidden>
+
+               <!--Popular-->
+               <div class="catalogue__cards popular">
+                    <div class="card">
+                         <figure><img src="./src/blusas/blusa.png" alt=""></figure>    
+                         <div class="card__info">
+                              <h3>Blusa OG</h3>
+                              <h4>99.99 $</h4>
+                              <a href="" target="_blank">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/vestidos/vestido_negro.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Vestido V Neck</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/botas_baqueras.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Botas baqueras BG</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/gafas.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Gafas YBK</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/botas.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Botas WIFE</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/blusas/top_japones.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Top SY japones</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+               </div>
+               <!--Vestidos-->
+               <div class="catalogue__cards vestidos">
+                    <div class="card">
+                         <figure><img src="./src/vestidos/vestido_negro.png" alt=""></figure>    
+                         <div class="card__info">
+                              <h3>Vestido V Neck</h3>
+                              <h4>99.99 $</h4>
+                              <a href="" target="_blank">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/vestidos/vestido_amarillo.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Vestido YLL</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/vestidos/vestido_negro_corto.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Vestido BK corto</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/vestidos/vestido_rojo.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Vestido RedWine</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/vestidos/vestido_beige.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Vestido BG</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/vestidos/vestido_gris.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Vestido GRY corto</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+               </div>
+               <!--Blusas-->
+               <div class="catalogue__cards blusas">
+                    <div class="card">
+                         <figure><img src="./src/blusas/top_otono.png" alt=""></figure>    
+                         <div class="card__info">
+                              <h3>Blusa SY otoño</h3>
+                              <h4>99.99 $</h4>
+                              <a href="" target="_blank">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/blusas/top_beige.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Top BG</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/blusas/blusa_green.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Top GR verde</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/blusas/blusa.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Blusa OG</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/blusas/top_japones.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Top SY japones</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/blusas/top_negro.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Top Black</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+               </div>
+               <!--Accesorios-->
+               <div class="catalogue__cards accesorios">
+                    <div class="card">
+                         <figure><img src="./src/accesorios/botas_baqueras.png" alt=""></figure>    
+                         <div class="card__info">
+                              <h3>Botas vaqueras BG</h3>
+                              <h4>99.99 $</h4>
+                              <a href="" target="_blank">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/botas.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Botas WYFE</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/gafas_azules.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Gafas BL</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/gafas.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Gafas YBK</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/gafas_negras.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Gafas BLK</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <figure><img src="./src/accesorios/gafas_orange.png" alt=""></figure>
+                         <div class="card__info">
+                              <h3>Gafas ORG</h3>
+                              <h4>99.99 $</h4>
+                              <a href="">Comprar</a>
+                         </div>
+                    </div>
+               </div>
+          </div> 
+     </section>
+     <section class="contact" id="contact">
+          <h2>¿Alguna duda? Envíanos un mensaje</h2>
+          <form action="">
+               <label for="input-name">
+                    Ingresa tu nombre: <br>
+                    <input type="text" class="input-name">
+               </label>
+               <label for="input-email">
+                    Ingresa tu correo: <br>
+                    <input type="text" class="input-email">
+               </label>
+               <label for="input-mensaje">
+                    Ingresa un mensaje: <br>
+                    <textarea class="input-mensaje" ></textarea>
+               </label>
+               <!--btn submit-->
+               <input type="submit" value="Enviar" class="input-submit">
+          </form>
+          <figure><img src="./imgs/contacto.png" alt=""></figure>
+     </section>
+     <!--Footer-->
+     <footer class="footer">
+          <p>Desing for <i>Krista</i></p>
+          <p><figure><img src="./icons/wats-incon.svg" alt=""><figcaption>+1 856-321-5676</figcaption></figure></p>
+     </footer> 
+</body>
+</html>

@@ -1,0 +1,319 @@
+:root{
+     --rosa: #ffc0cb;
+     --rosita: #f8e9ec;
+     --verde: #115311;
+     --popins: 'Poppins', sans-serif;
+     --sky: #e4eff1; 
+     --purple: #9090d4;
+}
+/*estilos generales*/
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: var(--popins);
+}
+img{
+     display: block; width: 100%; height: 100%;
+}
+figure{
+     height: 100%;
+}
+a{
+     color: #000; 
+     text-decoration: none;
+}
+body{
+     position: relative;
+     z-index: -3;
+}
+/*Header*/
+.header{
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     box-shadow: 0 1px 10px;
+     padding: 5px 0;
+     line-height: 1;
+     background-color: var(--sky);
+} 
+.header__nav{
+     display: flex;
+     top: 0;
+}
+.header__nav ul{
+     display: flex; 
+     gap: 20px;
+     width: 80%;
+     text-align: center;
+     list-style: none;
+}
+.header__nav a{
+     font-size: 1.2em;
+}
+.header__nav a:hover{
+     color: var(--rosa);
+}
+.burguer{
+     display: none;
+}
+.logo{
+     font-size: 2.6em;
+     text-shadow: 1px 1px 4px #000;
+}
+.logo::first-letter{
+     font-size: 2.5em;
+     color: var(--rosa);
+}
+.header__redes{
+     display: flex;
+     gap: 20px;
+}
+.header__redes img{
+     width: 40px;
+}
+/*Galery*/
+.galery{
+     height: 675px;
+     position: relative;
+     align-items: center;
+     
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: repeat(5, 1fr);
+     gap: 10px;
+     padding: 10px;
+}
+.galery img{
+     object-fit: cover;
+}
+.galery figure, .galery p{
+     box-shadow: 1px 1px 8px#000;
+}
+.frame1{
+     grid-column: 1 / 4;
+     grid-row: 1 / 4;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+
+     font-size: 5em;
+     height: 100%;
+     font-weight: 900;
+     color: var(--sky);
+     text-shadow: 5px 5px 15px #000;
+     background: radial-gradient(circle at 100%,var(--rosa), var(--purple));
+}
+.frame2{
+     grid-column: 4 / 6;
+     grid-row: 1 / 4;
+}
+.frame3{
+     grid-column: 1 / 3;
+     grid-row: 4 / 6;
+     box-shadow: 1px 1px 8px #000;
+}
+.frame4{
+     grid-column: 3 / 5;
+     grid-row: 4 / 6;
+}
+.frame5{
+     grid-column: 5 / 6;
+     grid-row: 4 / 6;
+}
+/*Catalogue*/
+.catalogue{
+     min-height: 800px;
+     background: radial-gradient(circle at top,var(--rosa), var(--sky), var(--purple) );
+     padding: 0 25px 25px 25px;
+     box-shadow: 0 -1px 5px #000;
+}
+.catalogue__grid{
+     display: grid;
+     grid-template-rows: .5fr 2fr 2fr;
+     grid-template-columns: 1fr 4fr;
+     column-gap: 30px;
+}
+.catalogue h2{
+     font-size: 2.5em;
+     grid-column: 1 / 3;
+     align-self: center;
+     justify-self: center;
+}
+.catalogue__tags{
+     display: flex;
+     flex-wrap: wrap;
+     height: max-content;
+     gap: 30px;
+     justify-content: center;
+
+     grid-column: 1 / 2;
+     grid-row: 2 / 4;
+}
+.catalogue label{
+     text-align: center;
+     padding: 15px 0;
+     border: solid 2px #000;
+     width: 150px;
+     cursor: pointer;
+}
+.catalogue__cards{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 25px;
+
+     grid-column: 2 / 4;
+     grid-row: 2 / 4;
+}
+.vestidos{
+     visibility: hidden;
+     opacity: 0;
+}
+.accesorios{
+     visibility: hidden;
+     opacity: 0;
+}
+.blusas{
+     visibility: hidden;
+     opacity: 0;
+}
+.card{
+     width: 300px;
+     height: max-content;
+     box-shadow: 3px 3px 10px #000;
+}
+.card img{
+     display: block;
+     margin: 0 auto;
+     width: 70%;
+}
+.card figure{
+     display: block;
+     width: 80%;
+     height: 200px;
+     width: 100%;
+     background-color: var(--sky);
+     border-bottom: solid 1px #000;
+}
+.card h3{
+     width: 80%;
+}
+.card__info{
+     padding: 10px 0;
+     justify-content: center;
+     gap: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+}
+.card h4{
+     color: var(--verde);
+     font-size: 2em;
+}
+.card a{
+     border: solid 2px #000;
+     padding: 5px 15px;
+     text-decoration: none;
+     color: #000;
+     background-color: none;
+}
+/*Catalogue functions*/
+#radio1:checked ~ .popular,
+#radio2:checked ~ .vestidos,
+#radio3:checked ~ .blusas,
+#radio4:checked ~ .accesorios{
+     visibility: visible;
+     opacity: 1;
+     transition: .3s ease-out;
+}
+#radio1:checked ~ div,
+#radio2:checked ~ .popular, .accesorios, .blusas,
+#radio3:checked ~ .popular, .vestidos, .accesorios,
+#radio4:checked ~ .popular, .vestidos, .blusas{
+     visibility: hidden;
+}
+#radio2:checked ~ .popular,
+#radio3:checked ~ .popular,
+#radio4:checked ~ .popular{
+     opacity: 0;
+}
+/*form*/
+.contact{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     box-shadow: 0 -1px 10px #000;
+     
+     gap: 100px;
+     padding: 100px 0;
+     align-items: center;
+     background: radial-gradient(circle at center 100%, var(--rosa), var(--sky));
+}
+.contact h2{
+     width: 100%;
+     text-align: center;
+     font-size: 3em;
+}
+.contact figure{
+     width: 80%;
+     max-width: 450px;
+}
+.contact form{
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     max-width: 350px;
+     width: 80%;
+}
+.input-name, .input-email{
+     width: 100%;
+     height: 25px;
+     border: none;
+     border-bottom: solid 2px #000;
+     outline: 0;
+     font-family: var(--popins);
+     font-size: 1.2em;
+     padding: 10px;
+     background: none;
+}
+.input-mensaje{
+     width: 100%;
+     height: 150px;
+     outline: 0;
+     font-family: var(--popins);
+     font-size: 1.2em;
+     padding: 10px;
+     resize: none;
+     border: solid 2px;
+     background: none;
+}
+.input-submit{
+     width: 100px;
+     height: 40px;
+     border: solid 2px;
+     background: none;
+     cursor: pointer;
+}
+/*footer*/
+.footer{
+     padding: 30px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 5px;
+
+     background-color: var(--rosita);
+     box-shadow: 0 -1px 10px #000;
+}
+.footer img{
+     width: 25px;
+}
+.footer figure{
+     display: flex;
+}
+
+
+
