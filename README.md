@@ -8,7 +8,7 @@
 
 # Descomprimir el archivo.
 
-# Abrir `index.html` con cualquier IDE.
+# Abrir `index.html` con ayuda de cualquier IDE.
 
 # Empieza a editar.
 
